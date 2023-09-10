@@ -1,0 +1,138 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+    <title>Marina Aguirre| Personal portfolio</title>
+    <meta name="description" content="Marina Aguirre Full stack Developer + Marketing Specialist | Front end developer, Back-end developers, Digital marketing, Web development, e-Commerce | 20+ years of experience delivering results for clients."/>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLESHEET PROPIA -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <!-- INICIO HEADER & NAVBAR -->
+    <section id="header">
+      <div class="container">
+        <nav>
+          <a href="/"><img src="images/logo-marina-aguirre.png"
+            class="logo" alt="logo Marina Aguirre - Full Stack Developer"/></a>
+          <ul>
+            <li><a href="about">ABOUT</a></li>
+            <li><a href="services">SERVICES</a></li>
+            <li><a href="portfolio">PORTFOLIO</a></li>
+            <li><a href="contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-text">
+          <p>Hi, I'm<br /></p>
+          <h1><span class="span-m">M</span><span
+              class="span-arina"
+            >ARINA</span></h1>
+          <h4>Full Stack Developer + Mkt specialist</h4>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/marina-aguirre-3652a410/?"
+            target="_blank" rel="noopener noreferrer"
+          ><img src="../images/linkedin-icon.png" alt="whatsapp-icon" /></a>
+          <a href="https://api.whatsapp.com/send?phone=543512463603"
+            target="_blank" rel="noopener noreferrer"
+          > <img src="../images/whatsapp-icon.png" alt="whatsapp-icon" /> </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- FIN HEADER & NAVBAR -->
+
+    <!-- INICIO ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="row"> <!-- INICIO ROW -->
+          <div class="about-col-1">
+              <img src="../images/Marina.png" alt="Marina Aguirre photography">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About</h1> <br>
+            <p> I'm Marina Aguirre, full Stack developer and Marketing sepecialist from Argentina.
+                I started in 2005 in digital marketing + e-commerce. Since a few years ago I work as a front-end and back-end developer.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+              <p class="tab-links link" onclick="opentab('experience')">Experience </p>
+              <p class="tab-links link" onclick="opentab('education')">Education </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web development</span><br>Front-end + Back-end development</li>
+                <li><span>App Development</span><br>Building hybridApps</li>
+              </ul>
+            </div>
+
+             <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2020 - Current</span><br>Freelance Front-End developer</li>
+                <li><span>2019-2020</span><br>Chief Marketing at Obraplus S.A</li>
+                <li><span>2005-2008</span><br>Data entrie</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>UTN BA</span><br>Front-end developer</li>
+                <li><span>Universidad de Madrid</span><br>Mobile App</li>
+                <li><span>Harvard</span><br>Phyton</li>
+              </ul>
+            </div>
+            <br>
+            <p>I like buils RESPONSIVE, DINAMIC and FAST LOAD websites. For easy and intuitive UX/UI. <br>
+               I love making pages come to life.</p>
+
+
+          </div>
+        </div> <!-- FIN ROW -->
+      </div>
+    </section>
+    <!-- FIN ABOUT -->
+
+
+
+    {{{body}}}
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+  
+  </body>
+  <!--FIN BODY -->
+</html>
